@@ -1,0 +1,21 @@
+body
+{
+    background-color: #1d252d;
+}
+.log
+{
+    background-color:#354657 ;
+    box-shadow: 0px 0px 100px 3px rgb(0, 0, 0 , 0.3);
+}
+.inputForm
+{
+    background-color: #354657 ;
+}
+.head-log
+{
+    color: rgb(0, 136, 255);
+}
+a
+{
+   text-decoration: none;
+}
