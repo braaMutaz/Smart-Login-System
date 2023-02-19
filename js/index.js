@@ -60,6 +60,7 @@ else{
     localStorage.setItem('User-info', JSON.stringify(container))
     console.log(container);
     succe.classList.replace('d-none','d-block')
+    succe.innerHTML= 'succeeded'
 }
 
     
@@ -101,7 +102,7 @@ for( var i=0 ; i<containerUser.length ; i++ )
 }
 
 
-userEmail.onblur=alert('wow')
+
 
 
 
