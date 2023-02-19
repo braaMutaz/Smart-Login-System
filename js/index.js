@@ -35,12 +35,21 @@ else
 }
 
 function getUserInfo() {
-if(userName.value=='' && userEmail.value=='' && userPass.value=='')
+    let counter = 0;
+for(let i = 0; i < container.length; i++)
 {
-  
+    if(container[i].email === userEmail.value)
+    {
+        counter++;
+    }
 }
-else
+if(counter !== 0)
 {
+    succe.classList.replace('d-none','d-block')
+    succe.innerHTML= 'email is duplicated'
+    
+}
+else{
     var UserInfo =
     {
         name: userName.value,
@@ -52,6 +61,7 @@ else
     console.log(container);
     succe.classList.replace('d-none','d-block')
 }
+
     
 }
 
@@ -91,6 +101,7 @@ for( var i=0 ; i<containerUser.length ; i++ )
 }
 
 
+userEmail.onblur=alert('wow')
 
 
 
